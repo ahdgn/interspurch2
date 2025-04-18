@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guide des Exposants – Intersolar China 2025</title>
+  <meta name="description" content="Tout le guide des exposants Intersolar China 2025." />
+  <meta name="theme-color" content="#005A9C" />
+
+  <!-- Base pour tous les liens -->
+  <base href="/" />
+
+  <link rel="icon" href="/img/logo.png" type="image/png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo" aria-label="Accueil">
+        <img src="/img/logo.png" alt="Logo Intersolar" />
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="/" aria-current="page">Accueil</a></li>
+          <li><a href="#categories">Catégories</a></li>
+          <li><a href="#exposants">Exposants</a></li>
+          <li><a href="#favoris">Favoris</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <form id="search-form" role="search" aria-label="Recherche d’exposants">
+        <label for="search-input" class="visually-hidden">Rechercher</label>
+        <input id="search-input" type="search" placeholder="Rechercher un exposant…" autocomplete="off" />
+      </form>
+    </section>
+
+    <section id="exhibitors" class="exhibitors-grid" aria-label="Exposants">
+      <!-- Injections JS -->
+    </section>
+
+    <nav class="pagination" aria-label="Pagination">
+      <ul id="pagination-list"><!-- Injections JS --></ul>
+    </nav>
+  </main>
+
+  <div id="exhibitor-modal" class="modal" role="dialog" aria-modal="true" hidden>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/js/db.js" defer></script>
+  <script src="/js/ui.js" defer></script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
